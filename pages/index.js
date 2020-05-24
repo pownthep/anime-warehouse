@@ -4,7 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
-import Autocomplete from "../components/autocomplete"
+import Autocomplete from "../components/autocomplete";
 
 export default function Home({ allPostsData }) {
   return (
@@ -12,11 +12,9 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Autocomplete
-        suggestions={allPostsData}
-      />
+      <Autocomplete suggestions={allPostsData} />
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>POPULAR THIS SEASON</h2>
+        <h5 className={utilStyles.lightText}>POPULAR THIS SEASON</h5>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, thumbnail }) => (
             <li className={utilStyles.listItem} key={id}>

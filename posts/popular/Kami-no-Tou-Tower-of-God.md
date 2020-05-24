@@ -1,5 +1,5 @@
 ---
-title: 'Tower of God'
+title: 'Kami no Tou: Tower of God'
 date: '2020-04-02'
 thumbnail: 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx115230-aHcNrjMJkPnx.png'
 ---
